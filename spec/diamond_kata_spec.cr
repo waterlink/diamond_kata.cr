@@ -1,9 +1,11 @@
 require "./spec_helper"
 
-describe DiamondKata do
+Spec2.describe DiamondKata do
   # TODO: Write tests
 
   it "works" do
-    false.should eq(true)
+    Quick.check("stuff", [x : Int32, y : Int32]) do
+      x >= y
+    end
   end
 end
